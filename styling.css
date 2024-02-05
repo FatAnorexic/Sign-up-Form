@@ -1,0 +1,11 @@
+.dummy{
+    box-sizing: border-box;
+    justify-content: center;
+    font-family: sans-serif;
+
+}
+
+.paragraph{
+    font-family: 'Times New Roman', Times, serif;
+    align-items: end;
+}
