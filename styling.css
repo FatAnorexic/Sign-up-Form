@@ -13,3 +13,9 @@
     justify-content: right;
 }*/
 
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(content/Norse-Bold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
