@@ -16,13 +16,12 @@
 @font-face {
     font-family: "Norse-Bold";
     src: url(content/Norse-Bold.otf) format('opentype');
-    font-weight: normal;
-    font-style: normal;
+    
 }
 
 #header{
     font-family: 'Norse-Bold';
-    font-size: larger;
+    /* font-size: larger; */
     font-weight: bold;
     text-align: center;
 }
