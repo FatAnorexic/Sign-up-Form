@@ -26,9 +26,14 @@
     text-align: center;
 }
 
-.page{
+.page, .rightSide, .leftSide{
     display: flex;
 }
 img{
     width:100%;
+}
+
+.rightSide,.leftSide{
+    flex-flow: column wrap;
+    justify-content: center;
 }
