@@ -35,5 +35,14 @@ img{
 
 .rightSide,.leftSide{
     flex-flow: column wrap;
-    justify-content: center;
+    /* justify-content: center; */
+}
+
+.data.sheet{
+    display: flex;
+    flex-flow: row wrap;
+}
+.data.sheet>div{
+    display: flex;
+    flex-flow: column;
 }
