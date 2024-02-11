@@ -26,3 +26,9 @@
     text-align: center;
 }
 
+body{
+    display: flex;
+}
+img{
+    width:100%;
+}
