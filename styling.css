@@ -26,14 +26,23 @@
     text-align: center;
 }
 
-.page, .rightSide, .leftSide{
+.page, .rightSide{
     display: flex;
 }
-img{
-    width:100%;
+.page{
+    width: 100vw;
+    height: 100vh;
+}
+.leftSide{
+    min-width: 400px;
+    background-image: url(content/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:40vw;
+    height: 100vh;
 }
 
-.rightSide,.leftSide{
+.rightSide{
     flex-flow: column wrap;
     /* justify-content: center; */
 }
