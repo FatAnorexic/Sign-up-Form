@@ -54,8 +54,10 @@
 .data.sheet{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
 }
 .data.sheet>div{
     display: flex;
     flex-flow: column;
+    width: 40%;
 }
