@@ -47,7 +47,7 @@
     background-color: #e6e4e4;
 }
 .rightSide{
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     /* justify-content: center; */
 }
 
