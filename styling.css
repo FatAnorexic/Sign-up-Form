@@ -26,6 +26,7 @@
     text-align: center;
 }
 
+
 .page, .rightSide{
     display: flex;
 }
@@ -41,7 +42,10 @@
     width:40vw;
     height: 100vh;
 }
-
+.header{
+    padding: 8vh 1vw;
+    background-color: #e6e4e4;
+}
 .rightSide{
     flex-flow: column wrap;
     /* justify-content: center; */
