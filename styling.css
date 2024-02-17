@@ -54,10 +54,17 @@
 .data.sheet{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: left;
 }
 .data.sheet>div{
     display: flex;
     flex-flow: column;
-    width: 40%;
+    width: 35%;
+    margin-left: 10px;
+}
+
+input{
+    width: 13rem;
+    border-radius: 4px;
+    height: 21px;
 }
