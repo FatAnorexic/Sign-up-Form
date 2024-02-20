@@ -37,10 +37,11 @@
 .leftSide{
     min-width: 400px;
     background-image: url(content/halie-west-25xggax4bSA-unsplash.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     width:40vw;
-    height: 100vh;
+    height: 150vh;
 }
 .header{
     padding: 8vh 1vw;
