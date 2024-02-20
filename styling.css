@@ -95,11 +95,17 @@ input:focus {
     box-shadow: 0px 7px 5px -5px rgb(0,0,0,0.5);
 }
 
-input#user_password:invalid{
+input#user_password:invalid, input#confirm_password:invalid{
     border-color: red;
 }
-input#user_password:valid{
+input#user_password:valid, input#confirm_password:valid{
     border-color: green;
+}
+#togglePassword, #confirmToggle {
+    display: inline;
+    margin-left: 59.5%;
+    vertical-align: baseline;
+    margin-top: -10%;
 }
 
 #form-submit{
