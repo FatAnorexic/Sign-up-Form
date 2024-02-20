@@ -51,6 +51,14 @@
     /* justify-content: center; */
 }
 
+#form-content {
+    background-color: #ffff;
+    gap: 15px;
+    padding: 1rem 1rem 3rem 1rem;
+    border-bottom: #424242 1px solid;
+    margin-bottom: 3rem;
+    box-shadow: 0px 3px 5px -2px rgb(0,0,0,0.5);
+}
 .data.sheet{
     display: flex;
     flex-flow: row wrap;
@@ -61,6 +69,7 @@
     flex-flow: column;
     width: 35%;
     margin-left: 10px;
+    gap: 5px
 }
 
 input{
