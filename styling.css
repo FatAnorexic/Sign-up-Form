@@ -37,7 +37,7 @@
 .leftSide{
     min-width: 400px;
     background-image: url(content/halie-west-25xggax4bSA-unsplash.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width:40vw;
@@ -81,4 +81,8 @@ input{
 }
 input:focus {
     box-shadow: 0px 7px 5px -5px rgb(0,0,0,0.5);
+}
+
+input#user_password:invalid{
+    border-color: red;
 }
