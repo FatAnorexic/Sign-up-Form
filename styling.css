@@ -41,7 +41,7 @@
     background-repeat: no-repeat;
     background-position: center;
     width:40vw;
-    height: 150vh;
+    height: 126vh;
 }
 .logo {
     display: flex;
@@ -73,7 +73,7 @@
     gap: 15px;
     padding: 1rem 1rem 3rem 1rem;
     border-bottom: #424242 1px solid;
-    margin-bottom: 3rem;
+    margin-bottom: 3px;
     box-shadow: 0px 3px 5px -2px rgb(0,0,0,0.5);
 }
 .data.sheet{
@@ -101,4 +101,22 @@ input:focus {
 
 input#user_password:invalid{
     border-color: red;
+}
+
+#form-submit{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5vw 5vh;
+    /* margin: 5vw 5vw; */
+    background-image: linear-gradient(to bottom, rgb(230, 228, 228, 0.0), rgb(230, 228, 228,1));
+    gap:1rem;
+}
+button {
+    padding: 0.7rem 1rem;
+    margin-right: 50vw;
+    background-color: rgb(47 97 47);
+    color: #FFFF;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: large;
+    border-radius: 10px;
 }
