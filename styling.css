@@ -96,11 +96,14 @@ input:focus {
 input#user_password:invalid{
     border-color: red;
 }
+input#user_password:valid{
+    border-color: green;
+}
 
 #form-submit{
     display: flex;
     flex-flow: column wrap;
-    padding: 5vw 5vh;
+    padding: 2vw 5vh;
     background-image: linear-gradient(to bottom, rgb(230, 228, 228, 0.0), rgb(230, 228, 228,1));
     gap:1rem;
 }
