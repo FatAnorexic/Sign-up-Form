@@ -2,7 +2,6 @@
 @font-face {
     font-family: "Norse-Bold";
     src: url(content/Norse-Bold.otf) format('opentype');
-    
 }
 
 
@@ -10,7 +9,6 @@
     background-color: #e6e4e4;
     --font-order: "Segoe UI", Helvetica, Arial, sans-serif;
     --font-norse: 'Norse-Bold';
-
 }
 
 #header{
@@ -20,6 +18,8 @@
 }
 body{
     font-family: var(--font-order);
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .page, .rightSide{
@@ -92,7 +92,6 @@ h2.form-header {
 }
 label{
     font-size:17px;
-    font-weight: 700;
 }
 p.match-pass{
     color: red;
@@ -136,6 +135,7 @@ button {
     color: #FFFF;
     font-family: var(--font-order);
     font-size: large;
+    font-weight:700;
     border-radius: 10px;
 }
 a:link, a:visited {
