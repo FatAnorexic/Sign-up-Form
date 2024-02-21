@@ -8,7 +8,7 @@ const password=document.getElementById('user_password');
 const confirm=document.getElementById('confirm_password');
 
 // add regex for testing
-const regex=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+const regex=new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/);
 
 // varable for flags around password
 var message=document.getElementById('match-pass')
@@ -19,7 +19,7 @@ const button=document.querySelector('button').addEventListener('click', function
     if(password.value!==confirm.value){
         message.style.visibility='visible';
         message.textContent="*passwords do not match";
-    }else if(!regex.test(password.textContent)||!regex.test(confirm.textContent)){
+    }else if(!regex.test(password.value)||!regex.test(confirm.value)){
         message.style.visibility='visible';
         message.textContent="Special characters (!@#$%^&*)";
         alert("*Passowrd must be 8 characters long with 1 capitol,"+ 
