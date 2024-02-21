@@ -21,15 +21,16 @@ const button=document.querySelector('button').addEventListener('click', function
         message.textContent="*passwords do not match";
     }else if(!regex.test(password.textContent)||!regex.test(confirm.textContent)){
         message.style.visibility='visible';
-        message.textContent=
-        "*Passowrd must be 8 characters long with 1 capitol,"+ 
-        "1 lowercase, 1 number and 1 special character(!@#$%^&*)";
+        message.textContent="Special characters (!@#$%^&*)";
+        alert("*Passowrd must be 8 characters long with 1 capitol,"+ 
+        "1 lowercase, 1 number and 1 special character(!@#$%^&*)");
     }
     
 });
 
 togglePassword.addEventListener('click', ()=>showPassword());
-// confirmToggle.addEventListener('click', ()=>showPassword());
+
+
 
 function showPassword(){
     // toggle the type attribut for user password
