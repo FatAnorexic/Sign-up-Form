@@ -30,7 +30,15 @@ const button=document.querySelector('button').addEventListener('click', function
 
 togglePassword.addEventListener('click', ()=>showPassword());
 
+// Add a common conditional that checks if the two passwords are the same and pass the regex test
+// This is done to give the user intuitive feedback. Without looking or counting dots the user can surmise
+// the password is in bounds
 
+function check(){
+    if(password.value===confirm.value){
+            document.querySelector('form').classList.add('validated');
+        }
+}
 
 function showPassword(){
     // toggle the type attribut for user password

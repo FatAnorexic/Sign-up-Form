@@ -111,8 +111,9 @@ input:focus {
 form.submitted #user_password:invalid, form.submitted #confirm_password:invalid{
     border-color: red;
 }
-#user_password:valid, #confirm_password:valid{
+form.validated #user_password:valid, form.validated #confirm_password:valid{
     border-color: green;
+    border-width: medium;
 }
 #togglePassword, #confirmToggle {
     display: inline;

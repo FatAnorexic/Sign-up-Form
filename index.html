@@ -46,7 +46,8 @@
                     <div>
                         <label for="user_password">*Password:</label>
                         <input type="password" id="user_password" name="user_password"
-                         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required/>
+                         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" 
+                         onkeyup='check()' required/>
                         <img src="content/eyeClosed.png" alt="eye" id="togglePassword" width="7%" height="30%">
                         <p class="match-pass" id="match-pass" style="visibility: hidden;"></p>
                     </div>
@@ -54,7 +55,8 @@
                     <div>
                         <label for="user_password">*Confirm Password:</label>
                         <input type="password" id="confirm_password" name="user_password"
-                         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required/>
+                         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" 
+                         onkeyup='check()' required/>
                     </div>
                 </section>
                 <section id="form-submit" class="footer">
