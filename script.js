@@ -16,12 +16,12 @@ function showPassword(){
     password.setAttribute('type', type);
     confirm.setAttribute('type', type);
     // toggle the eye icon
-    if(togglePassword.src.match("content/eyeslash.png")&&confirmToggle.src.match("content/eyeslash.png")){
-         togglePassword.src="content/eye.png";
-        confirmToggle.src="content/eye.png";
-    } else if(togglePassword.src.match("content/eye.png")&&confirmToggle.src.match("content/eye.png")){
-         togglePassword.src="content/eyeslash.png";
-        confirmToggle.src="content/eyeslash.png";
+    if(togglePassword.src.match("content/eyeClosed.png")&&confirmToggle.src.match("content/eyeClosed.png")){
+         togglePassword.src="content/eyeOpen.png";
+        confirmToggle.src="content/eyeOpen.png";
+    } else if(togglePassword.src.match("content/eyeOpen.png")&&confirmToggle.src.match("content/eyeOpen.png")){
+         togglePassword.src="content/eyeClosed.png";
+        confirmToggle.src="content/eyeClosed.png";
     }   
 }
 
