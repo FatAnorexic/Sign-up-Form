@@ -45,14 +45,16 @@
         
                     <div>
                         <label for="user_password">*Password:</label>
-                        <input type="password" id="user_password" name="user_password" minlength="8" required/>
+                        <input type="password" id="user_password" name="user_password" minlength="8"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required/>
                         <img src="content/eyeClosed.png" alt="eye" id="togglePassword" width="10%" height="30%">
                         <p class="match-pass" style="visibility: hidden;">*passwords do not match</p>
                     </div>
         
                     <div>
                         <label for="user_password">*Confirm Password:</label>
-                        <input type="password" id="confirm_password" name="user_password" minlength="8" required/>
+                        <input type="password" id="confirm_password" name="user_password" minlength="8" 
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required/>
                         <!-- <img src="content/eyeClosed.png" alt="eye" id="confirmToggle" width="10%" height="30%"> -->
                     </div>
                 </section>
