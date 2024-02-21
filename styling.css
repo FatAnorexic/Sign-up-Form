@@ -8,7 +8,7 @@
 
 :root{
     background-color: #e6e4e4;
-    --font-order: 'Segoe UI', Tahoma, Verdana, sans-serif, 'Norse-Bold';
+    --font-order: "Segoe UI", Helvetica, Arial, sans-serif;
     --font-norse: 'Norse-Bold';
 
 }
@@ -18,7 +18,7 @@
     font-weight: bold;
     text-align: center;
 }
-p, span{
+body{
     font-family: var(--font-order);
 }
 
@@ -123,4 +123,10 @@ button {
     font-family: var(--font-order);
     font-size: large;
     border-radius: 10px;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: rgb(47 97 47);
+    font-size: large;
+    font-weight: 900;
 }
