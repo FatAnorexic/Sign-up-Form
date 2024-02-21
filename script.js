@@ -21,7 +21,7 @@ const button=document.querySelector('button').addEventListener('click', function
         message.textContent="*passwords do not match";
     }else if(!regex.test(password.value)||!regex.test(confirm.value)){
         message.style.visibility='visible';
-        message.textContent="Special characters (!@#$%^&*)";
+        message.textContent="Special characters (!@#$%^&*()_+)";
         alert("*Passowrd must be 8 characters long with 1 capitol,"+ 
         "1 lowercase, 1 number and 1 special character(!@#$%^&*)");
     }
