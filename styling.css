@@ -108,7 +108,7 @@ input:focus {
     box-shadow: 0px 7px 5px -5px rgb(0,0,0,0.5);
 }
 
-#user_password:invalid,#confirm_password:invalid{
+form.submitted #user_password:invalid, form.submitted #confirm_password:invalid{
     border-color: red;
 }
 #user_password:valid, #confirm_password:valid{

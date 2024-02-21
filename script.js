@@ -7,6 +7,12 @@ const toggle=document.getElementById('togglePassword');
 const password=document.querySelector('#user_password');
 const confirm=document.querySelector('#confirm_password');
 
+// Adds an event listener to the button, if clicked and somthing is invalid a flag will be raised
+const button=document.querySelector('button').addEventListener('click', function (e){
+    //This will allow our passwords red border to flare if the information is invalid
+    document.querySelector('form').classList.add('submitted')
+});
+
 togglePassword.addEventListener('click', ()=>showPassword());
 // confirmToggle.addEventListener('click', ()=>showPassword());
 
