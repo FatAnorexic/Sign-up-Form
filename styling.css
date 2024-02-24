@@ -76,6 +76,7 @@ body{
 }
 .data.sheet>div{
     display: flex;
+    flex: 0 0 auto;
     flex-flow: column;
     width: 35%;
     margin-left: 10px;
