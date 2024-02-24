@@ -79,15 +79,12 @@ body{
     flex-flow: column;
     width: 35%;
     margin-left: 10px;
-    gap: 5px
+    gap: 5px;
+    box-sizing: border-box;
 }
 h2.form-header {
     display: flex;
     flex-flow: column;
-    /* margin-right: 25rem; */
-    /* margin-left: 9px; */
-    /* margin-top: -5px; */
-    /* margin-bottom: 0; */
     margin: -5px 25rem 0 9px;
 }
 label{
@@ -114,13 +111,16 @@ form.validated #user_password:valid, form.validated #confirm_password:valid{
     border-color: green;
     border-width: medium;
 }
-#togglePassword, #confirmToggle {
-    display: inline;
-    margin-left: 59.5%;
-    vertical-align: middle;
-    margin-top: -11%;
-}
 
+img#togglePassword {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    float: right;
+    margin-left: 11rem;
+    cursor: pointer;
+    margin-top: -2rem;
+}
 #form-submit{
     display: flex;
     flex-flow: column wrap;
