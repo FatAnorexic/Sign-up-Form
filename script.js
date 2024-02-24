@@ -3,7 +3,6 @@
 // this will call to the togglePassword id and be run through an event listener to check if the input type should
 // be 'text' or 'password'
 const toggle=document.getElementById('togglePassword');
-// const confirmToggle=document.getElementById('confirmToggle');
 const password=document.getElementById('user_password');
 const confirm=document.getElementById('confirm_password');
 
@@ -48,10 +47,9 @@ function showPassword(){
     // toggle the eye icon
     if(togglePassword.src.match("content/eyeClosed.png")){
         togglePassword.src="content/eyeOpen.png";
-        // confirmToggle.src="content/eyeOpen.png";
+
     } else if(togglePassword.src.match("content/eyeOpen.png")){
         togglePassword.src="content/eyeClosed.png";
-        // confirmToggle.src="content/eyeClosed.png";
     }   
 }
 
