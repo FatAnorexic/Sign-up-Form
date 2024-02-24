@@ -135,6 +135,7 @@ button {
     font-size: large;
     font-weight:700;
     border-radius: 10px;
+    cursor: pointer;
 }
 a:link, a:visited {
     text-decoration: none;
