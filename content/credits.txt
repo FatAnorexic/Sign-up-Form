@@ -1,2 +1,5 @@
 eyeClosed-Flaticon, Author=Stasy, link=https://www.flaticon.com/authors/stasy
 eyeOpen-Flaticon, Author=Gregor Cresnar, link=https://www.flaticon.com/authors/gregor-cresnar
+
+Eye icon position fixing-
+    https://stackoverflow.com/questions/62914325/how-to-add-my-icon-with-css-property-positionabsolute-such-that-it-always-remai

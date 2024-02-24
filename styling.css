@@ -83,9 +83,7 @@ body{
     box-sizing: border-box;
 }
 h2.form-header {
-    display: flex;
-    flex-flow: column;
-    margin: -5px 25rem 0 9px;
+    margin: -5px 32rem 0 9px;
 }
 label{
     font-size:17px;
@@ -118,8 +116,8 @@ img#togglePassword {
     position: relative;
     float: right;
     margin-left: 11rem;
-    cursor: pointer;
     margin-top: -2rem;
+    cursor: pointer;
 }
 #form-submit{
     display: flex;
