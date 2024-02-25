@@ -161,7 +161,6 @@ button {
     color: #FFFF;
     font-family: var(--font-order);
     font-size: large;
-    font-weight:700;
     border-radius: 10px;
     cursor: pointer;
 }
