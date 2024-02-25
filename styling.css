@@ -25,9 +25,7 @@ body{
     font-weight: bold;
     text-align: center;
 }
-
-
-.page, .rightSide{
+body, .rightSide{
     display: flex;
 }
 .leftSide{
@@ -36,8 +34,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width:40vw;
-    height: 131vh;
 }
 .logo {
     display: flex;
