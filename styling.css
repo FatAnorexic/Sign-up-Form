@@ -4,13 +4,14 @@
     src: url(content/Norse-Bold.otf) format('opentype');
 }
 
-
+/* sets base color and custom functions */
 :root{
     background-color: #e6e4e4;
     --font-order: "Segoe UI", Helvetica, Arial, sans-serif;
     --font-norse: 'Norse-Bold';
 }
 
+/* Declares basic page dimmensions, fonts, sizes and weights. */
 body{
     font-family: var(--font-order);
     font-size: 1.2rem;
@@ -20,21 +21,21 @@ body{
     max-width: 100%;
 }
 
-#header{
-    font-family: var(--font-norse, --font-order);
-    font-weight: bold;
-    text-align: center;
-}
+/* Call to all like flex objects, and positioning */
 body, .rightSide, .logo, .data.sheet,
 .data.sheet>div,#form-submit, .button-box{
     display: flex;
 }
+
 .logo, .data.sheet{
     flex-flow: row wrap;
 }
+
 .logo, img#togglePassword{
     position: relative;
 }
+
+/* Sets splash image and min max dimensions of content within container */
 .leftSide{
     min-width: 400px;
     width: 100%;
@@ -43,6 +44,8 @@ body, .rightSide, .logo, .data.sheet,
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/* Logo positioning and font systems */
 .logo {
     background-color: rgb(0,0,0,0.3);
     top: 30vh;
@@ -53,16 +56,23 @@ body, .rightSide, .logo, .data.sheet,
     font-family: "Norse-bold", sans-serif;
     font-size: 5rem;
 }
+
 .logo-image{
     height: 25vh;
 }
-.header{
-    padding: 8vh 1vw;
-}
+
+/* Right side of page */
+/* header content */
 .rightSide{
     flex-flow: column nowrap;
 }
 
+.header{
+    padding: 8vh 1vw;
+}
+
+/* content styling for main bod of form */
+/* main form section content */
 #form-content {
     background-color: #ffff;
     gap: 15px;
@@ -71,9 +81,12 @@ body, .rightSide, .logo, .data.sheet,
     margin-bottom: 3px;
     box-shadow: 0px 3px 5px -2px rgb(0,0,0,0.5);
 }
+
 .data.sheet{
     justify-content: left;
 }
+
+/* sets sizing and styling for all form objects(their div parents) */
 .data.sheet>div{
     flex: 0 0 auto;
     flex-flow: column;
@@ -82,26 +95,35 @@ body, .rightSide, .logo, .data.sheet,
     gap: 5px;
     box-sizing: border-box;
 }
+
 h2.form-header {
     margin: -5px 32rem 0 9px;
 }
+
+/* all label contents needed resizing for legibility and styling */
 label{
     font-size:17px;
 }
+
+/* While initially hidden, this colors the text when password conditions not met and submit is clicked */
 p.match-pass{
     color: red;
     margin: 0;
 }
+
+/* universal design for all formn input fields */
 input{
     width: 13rem;
     border:black 1px solid;
     border-radius: 4px;
     height: 30px;
 }
+
 input:focus {
     box-shadow: 0px 7px 5px -5px rgb(0,0,0,0.5);
 }
 
+/* Triggers when either password fail or pass condintions in JS file met */
 form.submitted #user_password:invalid, form.submitted #confirm_password:invalid{
     border-color: red;
 }
@@ -110,6 +132,7 @@ form.validated #user_password:valid, form.validated #confirm_password:valid{
     border-width: medium;
 }
 
+/* sets styling for toggle password images */
 img#togglePassword {
     height: 24px;
     width: 24px;
@@ -118,6 +141,8 @@ img#togglePassword {
     margin-top: -2rem;
     cursor: pointer;
 }
+
+/* Footer contnet */
 #form-submit{
     flex-flow: column wrap;
     padding: 2vw 5vh;
@@ -129,6 +154,7 @@ img#togglePassword {
     flex-flow: row;
     flex-shrink: 0;
 }
+
 button {
     padding: 0.7rem 1rem;
     background-color: rgb(47 97 47);
@@ -139,6 +165,7 @@ button {
     border-radius: 10px;
     cursor: pointer;
 }
+
 a:link, a:visited {
     text-decoration: none;
     color: rgb(47 97 47);
