@@ -5,6 +5,7 @@
 const toggle=document.getElementById('togglePassword');
 const password=document.getElementById('user_password');
 const confirm=document.getElementById('confirm_password');
+const form=document.querySelector("form")
 
 // add regex for testing
 const regex=new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/);
@@ -34,9 +35,29 @@ togglePassword.addEventListener('click', ()=>showPassword());
 // the password is in bounds
 
 function check(){
-    if(password.value===confirm.value){
+    password.addEventListener('keyup', ()=>{
+        if(regex.test(password.value)&&password.value===confirm.value){
             document.querySelector('form').classList.add('validated');
+            message.style.visibility='hidden';
         }
+    });
+    confirm.addEventListener('keyup', ()=>{
+        if(regex.test(confirm.value)&&password.value===confirm.value){
+            document.querySelector('form').classList.add('validated');
+            message.style.visibility='hidden';
+        }
+    })
+}
+
+// Function to check if form is still valid, If not validated is deleted from the form
+
+function reCheck(){
+    if(form.classList.contains('validated') && 
+        (password.value!==confirm.value) && 
+        (!regex.test(password.value) || !regex.test(confirm.value))
+        ){
+        form.classList.remove('validated');
+    }
 }
 
 function showPassword(){
