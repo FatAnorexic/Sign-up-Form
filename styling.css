@@ -70,6 +70,11 @@ body, .leftSide, .rightSide, .logo, .data.sheet,
     text-align: center;
 }
 
+/* underlines the two links */
+a#link:link, a#link:visited{
+    text-decoration: underline;
+}
+
 /* Right side of page */
 /* header content */
 .rightSide{
