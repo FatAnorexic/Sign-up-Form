@@ -39,6 +39,7 @@ body, .leftSide, .rightSide, .logo, .data.sheet,
 .leftSide{
     flex-direction: column;
     justify-content: space-between;
+    min-height: 800px;
     min-width: 400px;
     width: 100%;
     background-image: url(content/halie-west-25xggax4bSA-unsplash.jpg);
@@ -189,6 +190,7 @@ a:link, a:visited {
 .credits {
     justify-content: center;
     align-items: end;
+    padding-top: 17%;
 }
 
 a.credStyle:link, a.credStyle:visited {
