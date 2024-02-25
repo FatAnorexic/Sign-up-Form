@@ -23,7 +23,7 @@ body{
 
 /* Call to all like flex objects, and positioning */
 body, .leftSide, .rightSide, .logo, .data.sheet,
-.data.sheet>div,#form-submit, .button-box{
+.data.sheet>div,#form-submit, .button-box, .credits{
     display: flex;
 }
 
@@ -159,7 +159,7 @@ img#togglePassword {
 /* Footer contnet */
 #form-submit{
     flex-flow: column wrap;
-    padding: 2vw 5vh;
+    padding: 2vw 5vh 5px;
     background-image: linear-gradient(to bottom, rgb(230, 228, 228, 0.0), rgb(230, 228, 228,1));
     gap:1rem;
 }
@@ -185,4 +185,13 @@ a:link, a:visited {
     color: rgb(47 97 47);
     font-size: large;
     font-weight: 900;
+}
+.credits {
+    justify-content: center;
+    align-items: end;
+}
+
+a.credStyle:link, a.credStyle:visited {
+    font-size: small;
+    font-weight: 500;
 }
