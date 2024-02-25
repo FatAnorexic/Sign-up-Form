@@ -127,9 +127,14 @@ img#togglePassword {
     background-image: linear-gradient(to bottom, rgb(230, 228, 228, 0.0), rgb(230, 228, 228,1));
     gap:1rem;
 }
+
+.button-box {
+    display: flex;
+    flex-flow: row;
+    flex-shrink: 0;
+}
 button {
     padding: 0.7rem 1rem;
-    margin-right: 50vw;
     background-color: rgb(47 97 47);
     color: #FFFF;
     font-family: var(--font-order);
