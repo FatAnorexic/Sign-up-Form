@@ -25,20 +25,25 @@ body{
     font-weight: bold;
     text-align: center;
 }
-body, .rightSide{
+body, .rightSide, .logo, .data.sheet,
+.data.sheet>div,#form-submit, .button-box{
     display: flex;
+}
+.logo, .data.sheet{
+    flex-flow: row wrap;
+}
+.logo, img#togglePassword{
+    position: relative;
 }
 .leftSide{
     min-width: 400px;
+    width: 100%;
     background-image: url(content/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .logo {
-    display: flex;
-    flex-flow: row wrap;
-    position: relative;
     background-color: rgb(0,0,0,0.3);
     top: 30vh;
     gap: 1vw;
@@ -67,12 +72,9 @@ body, .rightSide{
     box-shadow: 0px 3px 5px -2px rgb(0,0,0,0.5);
 }
 .data.sheet{
-    display: flex;
-    flex-flow: row wrap;
     justify-content: left;
 }
 .data.sheet>div{
-    display: flex;
     flex: 0 0 auto;
     flex-flow: column;
     width: 35%;
@@ -111,14 +113,12 @@ form.validated #user_password:valid, form.validated #confirm_password:valid{
 img#togglePassword {
     height: 24px;
     width: 24px;
-    position: relative;
     float: right;
     margin-left: 11rem;
     margin-top: -2rem;
     cursor: pointer;
 }
 #form-submit{
-    display: flex;
     flex-flow: column wrap;
     padding: 2vw 5vh;
     background-image: linear-gradient(to bottom, rgb(230, 228, 228, 0.0), rgb(230, 228, 228,1));
@@ -126,7 +126,6 @@ img#togglePassword {
 }
 
 .button-box {
-    display: flex;
     flex-flow: row;
     flex-shrink: 0;
 }
