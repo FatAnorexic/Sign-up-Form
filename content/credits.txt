@@ -1,5 +1,19 @@
+SPLASH IMAGE:
+Halie West, unsplash.com,
+link=https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA
+
+FONT & IMAGE LOGO:
+Norse-Bold, The Odin Project,
+link=https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form
+
+SHOW PASSWORD CREDITS:
+How to toggle password visibility- GeeksforGeeks,
+link=https://www.geeksforgeeks.org/how-to-toggle-password-visibility-using-html-and-javascript/
+
 eyeClosed-Flaticon, Author=Stasy, link=https://www.flaticon.com/authors/stasy
+
 eyeOpen-Flaticon, Author=Gregor Cresnar, link=https://www.flaticon.com/authors/gregor-cresnar
 
 Eye icon position fixing-
     https://stackoverflow.com/questions/62914325/how-to-add-my-icon-with-css-property-positionabsolute-such-that-it-always-remai
+
