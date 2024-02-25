@@ -53,7 +53,7 @@ function check(){
 
 function reCheck(){
     if(form.classList.contains('validated') && 
-        (password.value!==confirm.value) && 
+        (password.value!=confirm.value) ||
         (!regex.test(password.value) || !regex.test(confirm.value))
         ){
         form.classList.remove('validated');
